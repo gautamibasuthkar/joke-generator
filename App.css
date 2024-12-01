@@ -1,0 +1,63 @@
+/* General app styling */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  color: #FFFBDB; /* Light cream */
+  background-color: #30362F; /* Dark green */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Heading styles */
+h1 {
+  color: #DA7422; /* Burnt orange */
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+button {
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #A59132; /* Goldish brown */
+  color: #FFFBDB; /* Light cream */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #DA7422; /* Burnt orange on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Joke display styles */
+p {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #625834; /* Medium brown */
+  padding: 15px;
+  background-color: #FFFBDB; /* Light cream */
+  border-radius: 5px;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+}
+
+/* Responsive centering for joke text */
+p:empty {
+  display: none; /* Hide the paragraph if there's no joke */
+}
